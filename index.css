@@ -1,0 +1,230 @@
+body, p, ul, li {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+}
+
+header {
+
+    color: beige;
+    text-align: center;
+    padding: 20px 0;
+    
+}
+
+nav {
+    padding: 10px;
+    margin-top: 40PX;
+}
+
+nav ul {
+    text-align: center;
+    font-family: "chivo momo" monospace;
+    list-style-type: none;
+}
+ul:hover li a{
+    color: #6a7179;
+}
+ul:hover li a:not(:hover){
+    color: rgb(129, 136, 139);
+    opacity: 0.3;
+    filter: blur(1px);
+}
+nav ul li {
+    list-style-type: none;
+    display: inline;
+    padding: 30px;
+}
+
+nav ul li a {
+    color: rgb(129, 136, 139);
+    text-decoration: none;
+    font-size: 26px;
+    font-weight: 700;
+    text-transform: uppercase;
+    transition: 0.5s ease;
+    padding: 0px;
+}
+
+#img{
+    height: auto;
+    border: 3px solid;
+    background: url(img1.jpeg);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    width: auto;
+}
+.button{
+    margin: 0;
+    height: auto;
+    background: transparent;
+    padding: 0;
+    border: none;
+    cursor: pointer;
+}
+.button{
+    --border-right:6px;
+    --border-stroke-color:rgba(39, 39, 38, 0.877);
+    --animation-color: rgba(53, 53, 52, 0.6);
+    --fs-size:2em;
+    letter-spacing: 3px;
+    text-decoration: none;
+    font-size: var(--fs-size);
+    font-family:"Arial";
+    position: relative;
+    text-transform: uppercase;
+    color: transparent;
+    -o-text-stroke: 1px rgba();
+    -ms-text-stroke: 1px rgba(41, 41, 40, 0.6);
+    -moz-text-stroke: 1px rgba(44, 44, 44, 0.6);
+    -webkit-text-stroke: 1px rgba(56, 56, 56, 0.6);
+}
+.hover-text{
+    position: absolute;
+    box-sizing: border-box;
+    content: attr(data-text);
+    color: rgb(48, 48, 47);
+    width: 0%;
+    inset: 0;
+    border-right: var(--border-right)
+    solidvar(--animation-color);
+    overflow: hidden;
+    transition: 0.5s;
+    -webkit-text-stroke: 1px var(--animation-color);
+}
+.button:hover .hover-text{
+    width: 100%;
+    filter: drop-shadow(0 0 23px rgb(24, 24, 24));
+}
+div{
+    padding: 100px;
+}
+P{
+    font-size: x-large;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+    background-color: #eeeeea;
+}
+
+.wrapper {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    height: 600px;
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: start;
+}
+
+.card {
+    width: 80px;
+    border-radius: .75rem;
+    background-size: cover;
+    cursor: pointer;
+    overflow: hidden;
+    border-radius: 2rem;
+    margin: 0 10px;
+    display: flex;
+    align-items: flex-end;
+    transition: .6s cubic-bezier(.28,-0.03,0,.99);
+    box-shadow: 0px 10px 30px -5px rgba(0,0,0,0.8);
+}
+
+.card > .row {
+    color: white;
+    display: flex;
+    flex-wrap: nowrap;
+}
+
+.card > .row > {
+    background: #223;
+    color: white;
+    width: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 15px;
+}
+
+.card > .row > .description {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    overflow: hidden;
+    height: 100px;
+    width: 520px;
+    opacity: 0;
+    transform: translateY(30px);
+    transition-delay: .3s;
+    transition: all .3s ease;
+}
+
+.description {
+    color: #b0b0ba;
+    padding-top: 5px;
+}
+
+.description h4 {
+    text-transform: uppercase;
+    position: absolute;
+    bottom: 0;
+}
+
+input {
+    display: none;
+}
+
+input:checked + label {
+    width: 600px;
+}
+
+input:checked + label .description {
+    opacity: 1 !important;
+    transform: translateY(0) !important;
+}
+.card[for="c1"] {
+    background-image: url(img2.jpg);
+}
+.card[for="c2"] {
+    background-image: url(img3.jpg);
+}
+.card[for="c3"] {
+    background-image: url(img4.jpg);
+}
+.card[for="c4"] {
+    background-image: url(img5.jpg);
+}
+.card[for="c5"] {
+    background-image: url(img6.webp);
+}
+.card[for="c6"] {
+    background-image: url(img7.jpg);
+}
+footer{
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}
